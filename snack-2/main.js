@@ -9,7 +9,7 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 
 const footballTeams = [
     { 
-        "nome": "Riomma",
+        "nome": "Riommma",
         "puntiFatti": 0,
         "falliSubiti": 0,
     },
@@ -21,19 +21,19 @@ const footballTeams = [
     },
 
     { 
-        "nome": "Giuventus",
+        "nome": "Gggiuventus",
         "puntiFatti": 0,
         "falliSubiti": 0,
     },
 
     { 
-        "nome": "Internette",
+        "nome": "Internettte",
         "puntiFatti": 0,
         "falliSubiti": 0,
     },
 
     { 
-        "nome": "Pescasseroli",
+        "nome": "Pescassseroli",
         "puntiFatti": 0,
         "falliSubiti": 0,
     }
@@ -44,5 +44,24 @@ const footballTeams = [
 //    console.log(footballTeams[key]);
 //}
 
-//-- GENERAZIONE NUMERI RANDOM --//
+//-- GENERAZIONE NUMERI RANDOM PER LE PROPRIETA' RICHIESTE--//
+
+function casualNumber(min, max) { //Funzione generazione random di numeri
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+for (let i = 0; i < footballTeams.length; i++) {
+    footballTeams[i].puntiFatti = casualNumber (0, 100); //Assegnazione del numero casuale (da 0 a 100) all'oggetto indicato
+    footballTeams[i].falliSubiti = casualNumber (0, 100); //Assegnazione del numero casuale (da 0 a 100) all'oggetto indicato
+}
+
+//console.log(footballTeams); //Check funzione numeri casuali negli objects richiesti
+
+//-- CREAZIONE NUOVO ARRAY CON OBJECTS RICHIESTI --//
+
+
+
+
+
+
 
