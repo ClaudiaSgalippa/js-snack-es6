@@ -10,32 +10,39 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 const footballTeams = [
     { 
         "nome": "Riomma",
-        "punti fatti": 0,
-        "falli subiti": 0,
+        "puntiFatti": 0,
+        "falliSubiti": 0,
     },
 
     { 
         "nome": "Lazzzie",
-        "punti fatti": 0,
-        "falli subiti": 0,
+        "puntiFatti": 0,
+        "falliSubiti": 0,
     },
 
     { 
         "nome": "Giuventus",
-        "punti fatti": 0,
-        "falli subiti": 0,
+        "puntiFatti": 0,
+        "falliSubiti": 0,
     },
 
     { 
         "nome": "Internette",
-        "punti fatti": 0,
-        "falli subiti": 0,
+        "puntiFatti": 0,
+        "falliSubiti": 0,
     },
 
     { 
         "nome": "Pescasseroli",
-        "punti fatti": 0,
-        "falli subiti": 0,
+        "puntiFatti": 0,
+        "falliSubiti": 0,
     }
 
 ];
+
+//for (let key in footballTeams) { //Stampa in console dell'array con gli objects, just for check
+//    console.log(footballTeams[key]);
+//}
+
+//-- GENERAZIONE NUMERI RANDOM --//
+
