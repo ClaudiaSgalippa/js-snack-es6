@@ -8,17 +8,17 @@ const bicycles = [
     { 
         "nome": "Bianchi",
         "peso": "6.6",
-    }
+    },
 
     { 
         "nome": "Pinarello",
         "peso": "7.5",
-    }
+    },
 
     { 
         "nome": "Colnago",
         "peso": "10",
-    }
+    },
 
     { 
         "nome": "Canyon",
@@ -26,3 +26,5 @@ const bicycles = [
     }
 
 ]
+
+console.log(bicycles);
