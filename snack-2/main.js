@@ -51,13 +51,30 @@ function casualNumber(min, max) { //Funzione generazione random di numeri
 }
 
 for (let i = 0; i < footballTeams.length; i++) {
-    footballTeams[i].puntiFatti = casualNumber (0, 100); //Assegnazione del numero casuale (da 0 a 100) all'oggetto indicato
-    footballTeams[i].falliSubiti = casualNumber (0, 100); //Assegnazione del numero casuale (da 0 a 100) all'oggetto indicato
+    footballTeams[i].puntiFatti = casualNumber (0, 100); //Assegnazione del numero casuale (da 0 a 100) all'objects indicato
+    footballTeams[i].falliSubiti = casualNumber (0, 100); //Assegnazione del numero casuale (da 0 a 100) all'objects indicato
 }
 
 //console.log(footballTeams); //Check funzione numeri casuali negli objects richiesti
 
 //-- CREAZIONE NUOVO ARRAY CON OBJECTS RICHIESTI --//
+
+const newArray = [];
+
+for (let i = 0; i < footballTeams.length; i++) {
+    newArray.push ({
+        nome: footballTeams[i].nome, //Aggiunta dell'objects indicato nel nuovo array
+        falliSubiti: footballTeams[i].falliSubiti //Aggiunta dell'objects indicato nel nuovo array
+    });
+}
+
+console.log(newArray); //Stampa in console del nuovo array
+
+//for (let key in newArray) { //Stampa in console dell'array con gli objects, just for check
+//    console.log(newArray[key]);
+//}
+
+
 
 
 
